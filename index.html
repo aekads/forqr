@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>મેઇલ મોકલો</title>
+</head>
+<body>
+    <script>
+        // Define the email details
+        const recipient = "cmogujarat@gmail.com";
+        const subject = encodeURIComponent("ધાનેરા તાલુકા ને બનાસકાંઠા જિલ્લા માં જ રાખવા બાબત.");
+        const body = encodeURIComponent(
+            `આદરણીય મુખ્યમંત્રી શ્રી,\n\nહું ધાનેરા તાલુકા ના છેવાડા ના ગામ નો વતની છું. મારા તાલુકા માં પાણી ની સમસ્યા છે સાથે સાથે બાજુ ના તાલુકા દાંતીવાડા માં પણ પાણી ની સમસ્યા છે. જો બંને તાલુકા ને અલગ અલગ જિલ્લા માં રાખવાથી બંને ના પ્રશ્નો નુ સમાધાન કરવામાં સમસ્યા આવશે જેથી મારા તાલુકાના પ્રશ્ન ને ધ્યાન માં રાખીને ધાનેરા ને બનાસકાંઠા જિલ્લા માં રાખવા માટે વિનંતી કરું છું.\n\nલી.`
+        );
+
+        // Automatically open the mail client
+        window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    </script>
+
+    <!-- Message for users without an email client -->
+    <noscript>
+        <p>આ પાનું સંપૂર્ણ રીતે ખોલવા માટે તમારા બ્રાઉઝર માં જાવાસ્ક્રિપ્ટ ચાલુ કરો.</p>
+    </noscript>
+</body>
+</html>
